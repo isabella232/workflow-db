@@ -1,2 +1,3 @@
 # workflow-db
-Private Workflow Database
+
+Workflow Database for GitHub Actions.
