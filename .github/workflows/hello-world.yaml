@@ -1,0 +1,17 @@
+name: hello-world
+
+on:
+  workflow_call:
+    inputs:
+      who-to-greet:
+        description: 'Who to greet'
+        required: false
+        default: 'World'
+        type: string
+
+jobs:
+  greeting:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Greet
+        run: echo "Hello ${{ inputs.who-to-greet }}"
